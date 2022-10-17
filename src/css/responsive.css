@@ -1,0 +1,61 @@
+@media(max-width:600px){
+    body{
+    background: var(--Violet) url(../images/bg-mobile.svg) center top no-repeat;
+    background-size: contain;   
+}
+  .container{
+    display:flex;
+    flex-direction: column;
+    margin:0 3rem;
+  }  
+  /* HEADER */
+  .container .header{
+    padding-left: 0;
+    margin:1rem 0 5rem 0;
+  }
+  .container .header img{
+    width: 15rem;
+  }
+  /* SECTION */
+  .container .section img{
+    max-width: 30rem;
+  }
+  .container .section{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .section .text-container{
+    margin-top: 5rem;
+    padding: 0;
+  }
+  .container .section .text-container .title{
+    font-size: 2.4rem;
+    line-height: 4rem;
+    text-align: center;
+  }
+  .container .section .text-container .text{
+    text-align: center;
+  }
+  .container .section .text-container a{
+   display:flex;
+   justify-content: center;
+  }
+  .container .section .text-container .btn-register{
+    height:4rem;
+    margin-bottom: 3rem;
+  }
+  /* FOOTER */
+  .footer{
+    display:flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .footer a{
+    width:3.5rem;
+    height:3.5rem;
+    margin-bottom:2rem ;
+
+  }
+}

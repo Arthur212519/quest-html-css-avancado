@@ -1,0 +1,100 @@
+html{
+    font-size:62.5%;
+}
+body{
+    background: var(--Violet) url(../images/bg-desktop.svg) left center no-repeat;
+    background-size:contain;
+    
+}
+/* CONTAINER */
+.container {
+    display: grid;
+    row-gap:0;
+    grid-template-areas: "header header" 
+        "section section"
+        "footer footer";
+        padding: 5rem;
+}
+
+/* HEADER */
+.header {  
+    padding-bottom: 2.5rem;
+    grid-area: header;
+}
+.header img{
+    width:20rem;
+}
+/* SECTION */
+.section {
+    grid-area: section;
+    display:flex;
+    /* margin: 5rem; */
+
+}
+.section .text-container{
+    display: flex;
+    flex-direction: column;
+    color:#fff;
+    margin-top: 2rem;
+    padding-left: 4rem;
+   
+}
+.section .text-container .title{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 5.5rem;
+ 
+   
+    
+}
+.section .text-container .text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    padding:0;
+    text-align: top;
+}
+.section .text-container .btn-register{
+   width:20rem;
+   height:5rem;
+   color:var(--Violet);
+   border-radius:  3rem;
+   border-style: none;
+   margin-top:3.5rem;
+   font-family: 'Poppins',sans-serif;
+   font-size:1.8rem;
+   transition: 0.3s;
+}
+.section .text-container .btn-register:hover{
+    color:#fff;
+    background-color: var(--Soft);
+}
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    display:flex;
+    justify-content:end;
+    gap: 2.5rem;
+    padding-right: 8.5rem;
+    /* padding-bottom: 3rem; */
+   margin-top: 3rem;
+    
+}
+.footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:4rem;
+    height:4rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 2rem;
+    color:#fff;
+    transition: 0.3s;
+}
+.footer a:hover{
+    border-color: var(--Soft);
+    color:var(--Soft);
+}
